@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: border-box;
+    font-family: sans-serif;
+}
+body {
+    background: #131419;
+    overflow: hidden;
+
+}
+.container {
+    position: relative;
+    max-width: 798px;
+    width: 100%;
+    margin: 130px auto;
+    background: rgba(255,255,255,0.2);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+    color: #fff;
+    border-radius: 5px;
+    padding: 25px 30px 30px 30px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-left: 1px solid rgba(255,255,255,0.05);
+    border-right: 1px solid rgba(255,255,255,0.05);
+}
+.container header {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.container nav {
+    height: 50px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.container nav label {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    color: #131419;
+    font-size: 17px;
+    position: relative;
+    z-index: 1;
+    color: #8c8c8c;
+    transition: all 0.3s ease;
+}
+#home:checked ~ nav label.home,
+#blog:checked ~ nav label.blog,
+#code:checked ~ nav label.code,
+#help:checked ~ nav label.help,
+#about:checked ~ nav label.about{
+    color: #fff;
+}
+input[type="radio"] {
+    display: none;
+}
+.container nav label i {
+    padding-right: 7px;
+}
+.container nav .slider {
+    position: absolute;
+    height: 70px;
+    width: 20%;
+    background: #131419;
+    border-radius: 5px;
+    z-index: 0;
+    left: 0;
+    bottom: 0;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-left: 1px solid rgba(255,255,255,0.05);
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+#blog:checked ~ nav .slider {
+    left: 20%;
+}
+#code:checked ~ nav .slider {
+    left: 40%;
+}
+#help:checked ~ nav .slider {
+    left: 60%;
+}
+#about:checked ~ nav .slider {
+    left: 80%;
+}
+section .content {
+    display: none;
+}
+#home:checked ~ section .content-1,
+#blog:checked ~ section .content-2,
+#code:checked ~ section .content-3,
+#help:checked ~ section .content-4,
+#about:checked ~ section .content-5 {
+    display: block;
+}
+section .content .title {
+    font-size: 21px;
+    font-weight: 500;
+    margin: 30px 0 10px 0;
+}
+a {
+    color: white;
+}
+
+.icon-insta {
+    border: 1px solid #E0E0E0;
+    border-radius: 16px;
+    font-size: 40px;
+    opacity: 10%;
+    background: #FFFFFF;
+    margin-top: 20px;
+    color: blue;}
+
+.icon-insta:hover {
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.1);
+    opacity: 100%;
+}
+
+.icon-insta:hover {
+    background: linear-gradient(49.12deg, #FFDD55 6.62%, #FF543E 50.06%, #C837AB 93.5%);;
+}
+
+
+
+
+/*body {*/
+/*    height: 100vh;*/
+/*    font-family: arial;*/
+/*}*/
+
+/*.parallax1 {*/
+/*    margin-top: 55px;*/
+/*    background-image: url("https://www.nawpic.com/media/2020/aesthetic-backgrounds-nawpic-75.jpg");*/
+/*    min-height: 500px;*/
+/*    min-width: 500px;*/
+/*    background-attachment: fixed;*/
+/*    background-position: center;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*    display: grid;*/
+/*    place-items: center;*/
+/*}*/
+/*.parallax2 {*/
+/*    background-image: url("https://previews.123rf.com/images/niekrasova/niekrasova1806/niekrasova180600038/103992960-tropical-green-leaves-on-dark-background-.jpg");*/
+/*    min-height: 500px;*/
+/*    min-width: 500px;*/
+/*    background-attachment: fixed;*/
+/*    background-position: center;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*    display: grid;*/
+/*    place-items: center;*/
+/*}*/
+/*h2 {*/
+/*    background: #fff;*/
+/*    width: 200px;*/
+/*    border-radius: 50px;*/
+/*    text-align: center;*/
+/*}*/
+/*center {*/
+/*    font-size: 2rem;*/
+/*}*/
+
+
+/**, *::before{*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+
+/*}*/
